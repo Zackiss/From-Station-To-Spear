@@ -1,0 +1,55 @@
+### GENERIC ENTITY ###
+
+entity = {
+	name = "wormhole_spear_entity"
+	
+	scale = 1.25
+	pdxmesh = "wormhole_spear_mesh"
+	
+		meshsettings = {
+			name = "g_body1Shape"
+			index = 0
+			texture_diffuse = "wormhole_spear_diffuse.dds"
+			texture_normal = "ai_01_civilian_normal.dds"
+			texture_specular = "ai_01_civilian_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+	}
+}
+
+#####################################################
+
+#####################################################
+#####											#####
+#####				STAGES					    #####
+#####											#####
+#####################################################
+
+entity = {
+	name = "wormhole_spear_stage_1_entity"
+	scale = 1.25
+	locator = { name = centre position = { 0 41.25 7.5 } }
+	locator = { name = laser position = { 0 41.25 17.5 } rotation = { 0 90 0 } }
+	attach = { centre = "wormhole_spear_entity" }
+	attach = { "laser" = "mega_art_instution_01_core_effect_entity" }
+}
+
+
+#####################################################
+#####											#####
+#####				ANIMATIONS					#####
+#####											#####
+#####################################################
+
+animation = {
+	name = "wormhole_spear_idle_animation"
+	file = "wormhole_spear_idle.anim"
+}
+
+#####################################################

@@ -1,0 +1,73 @@
+tech_wormhole_theory = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_mega_engineering" }
+	weight = @tier5weight3
+	is_rare = yes
+	
+	potential = {
+		host_has_dlc = "Utopia"
+	}
+	
+		prereqfor_desc = {
+		ship = {
+			title = "tech_unlock_wormhole_theory_title"
+			desc = "wormhole_spear_0_MEGASTRUCTURE_DETAILS"
+		}
+	}
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
+			}
+		}
+		modifier = {
+			factor = 6
+			has_ascension_perk = ap_master_builders
+		}
+		modifier = {
+			factor = 9
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_wormhole_theory }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+﻿l_english:
+
+####################################
+ # Technologies
+####################################
+
+tech_wormhole_theory:0 "Astro-Miner"
+tech_wormhole_theory_desc:1 "In order for our engineers to build structures capable of harvesting materials from asteroids, our scientists will have to research the technology."
+tech_unlock_wormhole_theory_title:1 "§HUnlocks Megastructure:§! Astro-Miner"
+
+####################################
+ # Wormhole spear
+####################################
+
+#Construction Site#
+wormhole_spear_0:0 "Astro Miner Construction Site"
+wormhole_spear_0_MEGASTRUCTURE_DETAILS:0 "A small structure capable of extracting rare crystals from asteroids."
+wormhole_spear_0_DESC:0 "This asteroid contains crystals within its core that can be extracted with an Astro Miner."
+this_dialog.1000.name:0 "Astro Miner Construction Site Built"
+this_dialog.1000.desc:0 "Our Engineers have begun work on an §GAstro Miner§! in the §Y[From.GetName]§! system. This will enable us to retrieve £rare_crystals£ §YRare Crystals§! from an asteroid."
+this_dialog.1000.a:0 "Let's Begin."
+
+#Stage 1#
+wormhole_spear_1:0 "Astro Miner"
+wormhole_spear_1_DESC:0 "Our Astro Miner is complete and extracting crystals at full capacity at the cost of a chunk of energy."
+this_dialog.1001.name:0 "Astro Miner Completed"
+this_dialog.1001.desc:0 "Our §GAstro Miner§! has been completed in the §Y[From.GetName]§! system. This large drill contains the necessary equipment to extract £rare_crystals£ §YRare Crystals§! from an asteroid."
+this_dialog.1001.a:0 "Great!"
